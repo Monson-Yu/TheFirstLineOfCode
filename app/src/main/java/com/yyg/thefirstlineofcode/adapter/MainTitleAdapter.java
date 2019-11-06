@@ -1,6 +1,7 @@
 package com.yyg.thefirstlineofcode.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import com.yyg.thefirstlineofcode.R;
 import com.yyg.thefirstlineofcode.util.Util;
 
 public class MainTitleAdapter extends BaseAdapter {
+    private static final String TAG = "YYG";
     private Context mContext;
     private LayoutInflater mInflater;
 
@@ -46,12 +48,14 @@ public class MainTitleAdapter extends BaseAdapter {
             view = mInflater.inflate(R.layout.layout_main_title_item, null);
             holder = new Holder();
             holder.tvId = view.findViewById(R.id.tv_main_title_id);
+//            Log.d(TAG, "holder关联 ");
             holder.tvContent = view.findViewById(R.id.tv_main_title);
             view.setTag(holder);
         } else {
             holder = (Holder) view.getTag();
         }
-        holder.tvId.setText((i + 1));
+        String no = i < 9 ? " " + (i + 1) + " " : String.valueOf(i + 1);
+        holder.tvId.setText(no);
         holder.tvContent.setText(Util.data[i]);
         return view;
     }
