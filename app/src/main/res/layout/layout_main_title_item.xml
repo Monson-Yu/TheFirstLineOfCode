@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="第"
         android:textColor="@color/colorBlack"
-        android:textSize="20sp"
+        android:textSize="19sp"
         android:textStyle="bold" />
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorBlack"
-        android:textSize="20sp"
+        android:textSize="19sp"
         android:textStyle="bold" />
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="章  "
         android:textColor="@color/colorBlack"
-        android:textSize="20sp"
+        android:textSize="19sp"
         android:textStyle="bold" />
 
     <TextView

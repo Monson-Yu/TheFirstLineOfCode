@@ -24,7 +24,7 @@ public class MainTitleAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 14;
+        return 15;
     }
 
     @Override
@@ -56,7 +56,7 @@ public class MainTitleAdapter extends BaseAdapter {
         }
         String no = i < 9 ? " " + (i + 1) + " " : String.valueOf(i + 1);
         holder.tvId.setText(no);
-        holder.tvContent.setText(Util.data[i]);
+        holder.tvContent.setText(Util.mTitle[i]);
         return view;
     }
 }
